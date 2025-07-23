@@ -3,42 +3,84 @@
     <head>
         <title>Booking</title>
         <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/destinations.css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Booking Form</h1>
+        <header class="header">
+            <section class="container">
+                <a href="../index.html"><img class="header-logo" src="../images/travel_logo" alt="Travel Logo"></a>
+                <nav class="header-nav">
+                   <a href="index.html" class="header-link">Home</a>
+                    <a href="services.html" class="header-link">Our Services</a>
+                    <a href="destinations.html" class="header-link">Destinations</a>
+                    <a href="testimonials.html" class="header-link">Testimonials</a>
+                    <a href="booking.html" class="header-link active">Booking</a>                
+                </nav>
+            </section>
         </header>
 
         <main>
-            <section>
-                <form>
-                    <label for="fname">First Name:</label> 
-                    <br>
-                    <input type="text" id="fname">
-                    <label for="lname">Last Name:</label>
-                    <br>
-                    <input type="text" id="lname">
-                    <label for="contact">Contact Number:</label>
-                    <br>
-                    <input type="text" id="contact">
-                    <label for="email">Email Address:</label>
-                    <br>
-                    <input type="text" id="email">
+            <h1>Fill in the form to book a service</h1>
+            <section class="booking-container">
+                <form id="booking">
+                    <section class="flex-input">
+                        <label for="fname">First Name:</label> 
+                        <input type="text" id="fname">
+                    </section>
 
-                    <label for="services">Choose a service</label>
-                    <select name="services" id="services">
-                        <option value="sports">Adventures Sports</option>
-                        <option value="tour">Culinary Tour</option>
-                        <option value="heritage">Cultural Heritage</option>
-                        <option value="safari">Wild Safari</option>
-                    </select>
-                    <input type="submit" value="submit">
+                    <section class="flex-input">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname">
+                    </section>
+
+                    <section class="flex-input">
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" id="contact">
+                    </section>
+
+                    <section class="flex-input">
+                        <label for="email">Email Address:</label>
+                        <input type="text" id="email">
+                    </section>
+
+                    <section class="flex-input">
+                        <label for="country">Select Country</label>
+                        <select name="country" id="country">
+                            <option value="ba">Bali</option>
+                            <option value="jp">Japan</option>
+                            <option value="eu">Europe</option>
+                            <option value="du">Dubai</option>
+                            <option value="af">Africa</option>
+                            <option value="eu">Europe</option>
+                            <option value="ba">Bali</option>
+                            <option value="us">United States of America</option>
+                            <option value="in">India</option>
+                            <option value="eg">Egypt</option>
+                        </select>
+                    </section>
+
+                    <section class="flex-input">
+                        <label for="services">Choose a service</label>
+                        <select name="services" id="services">
+                            <option value="sports">Adventures Sports</option>
+                            <option value="tour">Culinary Tour</option>
+                            <option value="heritage">Cultural Heritage</option>
+                            <option value="safari">Wild Safari</option>
+                        </select>
+                    </section>
+
+                    <section class="flex-button">
+                        <input type="button" value="Book">
+                    </section>
+                    
                 </form>
             </section>
         </main>
 
-        <footer>
-            <p>Copyright ©</p>
+        <footer class="footer">
+            <section class="container">
+                <p class="footer-text">Copyright © Adventure Trails 2025</p>
+            </section>
         </footer>
     </body>
 </html>
