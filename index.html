@@ -1,8 +1,9 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="eng">
     <head>
         <title>Homepage</title>
-        <meta charset="UTF-08">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,22 +12,103 @@
         <link rel="icon" type="image/png" href="./images/travel_icon.png" size="any">
     </head>
     <body>
-        <header>
-            <nav class="nav">
-                <a href="#">Homepage</a>
-                <a href="#">Destinations</a>
-                <a href="#">Our Services</a>
-                <a href="#">Booking</a>
-                <a href="#">About Us</a>
+        <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <a href="./index.html"><img class="header-logo" src="./images/travel_logo.png" alt="Travel Logo"></a>
+            <nav class="header-nav">
+                <a href="./index.html" class="header-link">Home</a>
+                <a href="./pages/services.html" class="header-link active">Our Services</a>
+                <a href="./pages/destinations.html" class="header-link">Destinations</a>
+                <a href="./pages/testimonials.html" class="header-link">Testimonials</a>
+                <a href="./pages/booking.html" class="header-link">Booking</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-
+        <!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <main class="hero-content">
+            <article class="hero-text">
+                <h1 class="hero-title">Discover Amazing Adventures</h1>
+                <p class="hero-subtitle">Experience breathtaking destinations with our expertly guided tours. From cultural expeditions to thrilling outdoor adventures, we create unforgettable memories that last a lifetime.</p>
+                <a href="./pages/booking.html" class="cta-button">Book Now</a>
+                <a href="./pages/contactus.html" class="cta-button">Contact Us</a>
+            </article>
+            <figure class="hero-video">
+                <video autoplay muted loop playsinline class="bg-video">
+                <source src="./images/hero-destinations.mp4" type="video/mp4"/>
+                Your browser does not suppport the video tag
+            </video>
+            </figure>
         </main>
+    </div>
+</section>
 
-        <footer>
-            
-        </footer>
+<!-- Information Section -->
+<section class="information">
+    <div class="container">
+        <h2 class="info-title">Explore Our Services To Start your Adventure!</h2>
+        <div class="info-cards">
+            <article class="info-card">
+                <figure class="card-placeholder">
+                    <img src="./images/wild_safari.jpg" alt="Wildlife Safari">
+                    <figcaption>Wildlife Safari</figcaption>
+                </figure>
+                <p class="card-text">Explore pristine wilderness and wildlife on our guided nature tours in national parks.</p>
+            </article>
+            <article class="info-card">
+                <figure class="card-placeholder">
+                    <img src="./images/cultural_heritage.jpg" alt="Cultural Tours">
+                    <figcaption>Cultural Tours</figcaption>
+                </figure>
+                <p class="card-text">Immerse yourself in local traditions with our cultural heritage tours.</p>
+            </article>
+            <article class="info-card">
+                <figure class="card-placeholder">
+                    <img src="./images/culinary_tours.jpg" alt="Food Tours">
+                    <figcaption>Food Tours</figcaption>
+                </figure>
+                <p class="card-text">Savor authentic flavors on our guided food tours.</p>
+            </article>
+            <article class="info-card">
+                <figure class="card-placeholder">
+                    <img src="./images/adventure_sports.jpg" alt="Adventure Sports">
+                    <figcaption>Adventure Sports</figcaption>
+                </figure>
+                <p class="card-text">Experience adrenaline-pumping adventures like rock climbing and white-water rafting.</p>
+            </article>
+        </div>
+    </div>
+    <div class="btn-container">
+    <a href="./pages/services.html" class="sb-button">View our Services</a>
+    </div>
+</section>
+
+<section class="gray-section">
+    <div class="container">
+       <i><p class="section-text">" Join us as we explore breathtaking destinations and create unforgettable memories. Our guided tours are designed to offer you the best experiences, whether you're looking for cultural immersion, thrilling outdoor activities, or culinary delights. "</p></i>
+    </div>
+</section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h3 class="cta-title">Unsure About Booking?</h3>
+                    <p class="cta-subtitle">Click here to see our testimonials from our tavelers!</p>
+                </div>
+                <a href="./pages/testimonials.html" class="cta-button-white">Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+        <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Copyright © JourneyQuest Travel - 2025</p>
+        </div>
+    </footer>
     </body>
 </html>
