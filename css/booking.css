@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Roboto-ExtraBold";
+    src: url(../fonts/Roboto-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Roboto-LightItalic";
+    src: url(../fonts/Roboto-LightItalic.ttf)
+}
+
+h1 {
+    font-family: "Roboto-LightItalic";
+}
+
+.booking-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    height: 400px;  
+    font-family: "Roboto-ExtraBold";
+}
+
+#booking {
+    width: 25%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.flex-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.flex-input > label {
+    flex-basis: 150px;
+    margin-top: 10px;
+}
+
+#booking input[type=text] {
+    padding: 10px;
+    width: 200px;
+}
+
+#booking select {
+    padding: 10px;
+    width: 225px;
+}
+
+#booking input[type=button] {
+    background-color: #3882F6;
+    color: #E5E7EB;
+    width: 90px;
+    border: #FFF 0.1rem solid;
+    border-radius: 5px;
+}
+
+#booking input[type=button]:hover {
+    cursor: pointer;
+    background-color: #5c7291;
+} 
+
+.flex-button {
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+
