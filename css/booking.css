@@ -26,18 +26,10 @@
     background: url(../images/services_bg.jpg);
 }
 
-.content {
+/* .content {
     max-width: 800px;
-    text-align: center;
     margin-top: 100px;
-}
-
-.content > h1 {
-    font-size: 45px;
-    font-weight: bolder;
-    color: #1F2937;
-    text-align: center;
-}
+} */
 
 .booking-form {
     width: 40%;
