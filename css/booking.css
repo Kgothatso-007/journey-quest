@@ -8,64 +8,91 @@
     src: url(../fonts/Roboto-LightItalic.ttf)
 }
 
-h1 {
-    font-family: "Roboto-LightItalic";
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf)
 }
+
 
 .booking-container {
+    position: relative;
     display: flex;
+    min-height: 100vh;
+    padding: 50px 100px;
     align-items: center;
     justify-content: center;  
-    height: 400px;  
-    font-family: "Roboto-ExtraBold";
+    flex-direction: column;
+    font-family: "Roboto-Light";
+    background: url(../images/services_bg.jpg);
 }
 
-#booking {
-    width: 25%;
-    padding: 20px;
+.content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content > h1 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
+
+.booking-form {
+    width: 40%;
+    padding: 40px;
     border-radius: 5px;
-    background-color: #1F2937;
-    color: #E5E7EB;
+    background: #fff
 }
 
-.flex-input {
+.booking-form h2 {
+    font-size: 40px;
+    color: #1F2937;
+    font-weight: bolder;
+}
+
+.form-field {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.flex-input > label {
+.booking-form input[type=text], .booking-form input[type=button] {
+    width: 100%;
+    padding:5px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #1F2937;
+    outline: none;
+}
+
+.booking-form input[type=button] {
+    margin-bottom: 5px;
+}
+
+.form-field > label {
     flex-basis: 150px;
     margin-top: 10px;
 }
 
-#booking input[type=text] {
-    padding: 10px;
-    width: 200px;
-}
-
-#booking select {
+.booking-form select {
     padding: 10px;
     width: 225px;
+    margin-bottom: 20px;
 }
 
-#booking input[type=button] {
-    background-color: #3882F6;
-    color: #E5E7EB;
-    width: 90px;
-    border: #FFF 0.1rem solid;
-    border-radius: 5px;
+.booking-form input[type=text]:hover {
+    background-color: #E5E7EB;
 }
 
-#booking input[type=button]:hover {
+.booking-form input[type=button]:hover {
     cursor: pointer;
-    background-color: #5c7291;
-} 
+    background-color: #3882F6;
+}  
 
-.flex-button {
-    display: flex;
-    justify-content: start;
-    margin-top: 20px;
-}
+
 
 
