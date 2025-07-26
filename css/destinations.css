@@ -5,17 +5,11 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Light.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Roboto-italics';
     src: url('../fonts/Roboto-Italic.ttf') format('truetype');
 }
 
 body {
-    font-family: 'Roboto',sans-serif;
     line-height: 1.6;
     background: #fdfdfd;
     color: #222;
