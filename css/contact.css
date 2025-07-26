@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Roboto-ExtraBold";
+    src: url(../fonts/Roboto-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: "Roboto-BoldItalic";
+    src: url(../fonts/Roboto-BoldItalic.ttf)
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto-Black.ttf)
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf)
+}
+
+.icon > img {
+    width: 30px;
+    height: 30px;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/services_bg.jpg);
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.content > h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #F9FAF8;
+    text-align: center;
+}
+
+.details {
+    font-family: "Roboto-BoldItalic";
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+}
+
+.icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+.text h3 {
+    font-weight: 500;
+    color: #1F2937;
+}
+
+.contact-form {
+    width: 40%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    font-size: 40px;
+    color: #1F2937;
+    font-weight: 500;
+}
+
+.form-field {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-field input, textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #1F2937;
+    outline: none;
+    resize: none;
+}
+
+.form-field label {
+    color: #666
+}
+
+.form-field input:hover, .form-field textarea:hover {
+    background-color: #E5E7EB;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+    background-color: #3882F6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
