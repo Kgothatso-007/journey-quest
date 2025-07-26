@@ -1,1 +1,1 @@
-Preview URL: https://kgothatso-007.github.io/our-company/
+Preview URL: https://kgothatso-007.github.io/journey-quest/
