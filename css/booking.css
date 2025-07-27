@@ -16,6 +16,7 @@
 
 .booking-container {
     position: relative;
+    left: 10px;
     display: flex;
     min-height: 100vh;
     padding: 50px 100px;
