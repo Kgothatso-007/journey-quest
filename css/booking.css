@@ -1,18 +1,7 @@
 @font-face {
-    font-family: "Roboto-ExtraBold";
-    src: url(../fonts/Roboto-ExtraBold.ttf)
-}
-
-@font-face {
-    font-family: "Roboto-LightItalic";
-    src: url(../fonts/Roboto-LightItalic.ttf)
-}
-
-@font-face {
     font-family: "Roboto-Light";
     src: url(../fonts/Roboto-Light.ttf)
 }
-
 
 .booking-container {
     position: relative;
@@ -26,11 +15,6 @@
     background: url(../images/services_bg.jpg);
 }
 
-/* .content {
-    max-width: 800px;
-    margin-top: 100px;
-} */
-
 .booking-form {
     width: 40%;
     padding: 40px;
@@ -41,7 +25,6 @@
 .booking-form h2 {
     font-size: 40px;
     color: #1F2937;
-    font-weight: bolder;
 }
 
 .form-field {
@@ -84,6 +67,10 @@
     cursor: pointer;
     background-color: #3882F6;
 }  
+
+input[type=button] {
+    background-color: #808080
+}
 
 
 

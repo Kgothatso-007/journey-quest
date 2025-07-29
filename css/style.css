@@ -22,7 +22,7 @@ body {
   top: 0;
   background-color: #1f2937;
   padding: 20px 0;
-  z-index: 9999; /* Increased z-index to maximum */
+  z-index: 9999;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -1139,3 +1139,4 @@ body {
     font-size: 18px;
   }
 }
+
