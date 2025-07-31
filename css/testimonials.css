@@ -224,3 +224,71 @@ input[type="radio"] {
 .explore-button:hover {
     background-color: #005f87;
 }
+
+@media (max-width: 900px) {
+  .testimonial-carousel {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+    min-height: auto;
+  }
+
+  .carousel-track {
+    width: calc(5 * 60% + 4 * 1rem); 
+  }
+
+  .testimonial {
+    flex: 0 0 60%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  .heading h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .carousel-track {
+    width: calc(5 * 90% + 4 * 1rem);
+  }
+
+  .testimonial {
+    flex: 0 0 90%; 
+    padding: 1.5rem 1rem;
+    min-height: auto;
+  }
+
+  .testimonial img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial blockquote {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-footer-cta h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-footer-cta p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .explore-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
