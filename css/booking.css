@@ -13,6 +13,7 @@
     flex-direction: column;
     font-family: "Roboto-Light";
     background: url(../images/services_bg.jpg);
+    margin-top: 40px;
 }
 
 .booking-form {

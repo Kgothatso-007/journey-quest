@@ -26,6 +26,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: url(../images/services_bg.jpg);
+    margin-top: 40px;
 }
 
 .content {
