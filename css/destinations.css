@@ -15,33 +15,37 @@ body {
     color: #222;
 }
 
-.hero-video-section{
-    position:relative;
-    width:100%;
-    height:70vh;
+.container {
+    padding: 0 20px;
+}
+
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
     overflow: hidden;
 }
 
-.bg-video{
+.bg-video {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
     z-index: 0;
 }
 
-.video-content{
+.video-content {
     position: relative;
-    z-index:1;
+    z-index: 1;
     color: white;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.video-content h1{
+.video-content h1 {
     font-size: 50px;
 }
 
@@ -59,7 +63,6 @@ body {
     background: #395f91;
 }
 
-
 .filter {
     display: flex;
     justify-content: center;
@@ -67,6 +70,7 @@ body {
     border-bottom: 1px solid #ddd;
     background: #395f91;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .filter button {
@@ -79,6 +83,7 @@ body {
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    min-width: 120px;
 }
 
 .filter button:hover {
@@ -138,13 +143,11 @@ body {
     opacity: 1;
 }
 
-
-
 .destination-card:hover {
     transform: scale(1.02);
 }
 
-.destination-info{
+.destination-info {
     list-style-type: none;
     padding-left: 10%;
     padding-top: 10%;
@@ -153,16 +156,15 @@ body {
 
 .destination-info li {
     display: flex;
-    align-items: center; 
+    align-items: center;
     text-align: left;
-    gap: 10px; 
+    gap: 10px;
     margin-bottom: 10px;
 }
 
-
-.destination-info img{
-    width:20px;
-    height:20px;
+.destination-info img {
+    width: 20px;
+    height: 20px;
     border-radius: 5px;
     margin-bottom: 2px;
 }
@@ -216,6 +218,7 @@ body {
 
 .testimonials h2 {
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .quote-box {
@@ -226,6 +229,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     font-family: 'Roboto-italics';
+    font-size: 14px;
 }
 
 .cta {
@@ -237,13 +241,20 @@ body {
 
 .cta h2 {
     margin-bottom: 20px;
+    font-size: 26px;
 }
 
-.cta .btn{
+.cta .btn {
     border: 2px solid #ccc;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .video-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 900px) {
   .hero-video-section {
     height: 50vh;
   }
@@ -298,6 +309,36 @@ body {
   .cta h2 {
     font-size: 24px;
   }
+}
+
+@media (max-width: 768px) {
+    .video-content h1 {
+        font-size: 28px;
+    }
+
+    .filter {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .filter button {
+        width: 100%;
+        flex: none;
+    }
+
+    .cta h2 {
+        font-size: 22px;
+    }
+
+    .quote-box {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial {
+        flex: 0 0 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -355,5 +396,11 @@ body {
   
   .cta .btn {
     padding: 8px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destinations {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
