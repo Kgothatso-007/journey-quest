@@ -39,25 +39,14 @@
     transition: background-image 0.5s ease;
 }
 
-#card1:checked ~ .background {
-    background-image: url('../images/japan1.jpg');
-}
-#card2:checked ~ .background {
-    background-image: url('../images/dubai1.jpg');
-}
-#card3:checked ~ .background {
-    background-image: url('../images/bali1.jpg');
-}
-#card4:checked ~ .background {
-    background-image: url('../images/europe1.jpg');
-}
-#card5:checked ~ .background {
-    background-image: url('../images/egypt1.jpg');
-}
-
+#card1:checked ~ .background { background-image: url('../images/japan1.jpg'); }
+#card2:checked ~ .background { background-image: url('../images/dubai1.jpg'); }
+#card3:checked ~ .background { background-image: url('../images/bali1.jpg'); }
+#card4:checked ~ .background { background-image: url('../images/europe1.jpg'); }
+#card5:checked ~ .background { background-image: url('../images/egypt1.jpg'); }
 
 .testimonial-carousel {
-    max-width: 720px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     padding: 1rem;
@@ -79,13 +68,14 @@ input[type="radio"] {
 
 .carousel-track {
     display: flex;
+    flex-wrap: nowrap; 
     gap: 1rem;
+    width: calc(5 * 25% + 4 * 1rem);
     transition: transform 0.5s ease-in-out;
-    width: calc(5 * 30% + 4 * 1rem);
 }
 
 .testimonial {
-    flex: 0 0 30%;
+    flex: 0 0 25%; 
     background: white;
     padding: 2rem 1rem 1.5rem;
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
@@ -95,12 +85,15 @@ input[type="radio"] {
     flex-direction: column;
     align-items: center;
     min-height: 440px;
+    filter: grayscale(0.7);
+    opacity: 0.6;
+    transform: scale(0.9);
 }
 
 .testimonial img {
-    width: 180px;  
-    height: 180px; 
-    border-radius: 0; 
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
     object-fit: cover;
     margin-bottom: 1.2rem;
 }
@@ -119,33 +112,6 @@ input[type="radio"] {
 }
 
 
-#card1:checked ~ .carousel-window .carousel-track {
-    transform: translateX(0%);
-}
-
-#card2:checked ~ .carousel-window .carousel-track {
-    transform: translateX(calc(-30% - 1rem));
-}
-
-#card3:checked ~ .carousel-window .carousel-track {
-    transform: translateX(calc(-60% - 2rem));
-}
-
-#card4:checked ~ .carousel-window .carousel-track {
-    transform: translateX(calc(-90% - 3rem));
-}
-
-#card5:checked ~ .carousel-window .carousel-track {
-    transform: translateX(calc(-120% - 4rem));
-}
-
-.testimonial {
-    filter: grayscale(0.7);
-    opacity: 0.6;
-    transform: scale(0.9);
-    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
-}
-
 #card1:checked ~ .carousel-window .carousel-track > .testimonial:nth-child(1),
 #card2:checked ~ .carousel-window .carousel-track > .testimonial:nth-child(2),
 #card3:checked ~ .carousel-window .carousel-track > .testimonial:nth-child(3),
@@ -157,6 +123,27 @@ input[type="radio"] {
     box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
     z-index: 1;
     position: relative;
+}
+
+
+#card1:checked ~ .carousel-window .carousel-track {
+    transform: translateX(0%);
+}
+
+#card2:checked ~ .carousel-window .carousel-track {
+    transform: translateX(calc(-25% - 1rem));
+}
+
+#card3:checked ~ .carousel-window .carousel-track {
+    transform: translateX(calc(-50% - 2rem));
+}
+
+#card4:checked ~ .carousel-window .carousel-track {
+    transform: translateX(calc(-75% - 3rem));
+}
+
+#card5:checked ~ .carousel-window .carousel-track {
+    transform: translateX(calc(-100% - 4rem));
 }
 
 .carousel-nav {
@@ -220,4 +207,17 @@ input[type="radio"] {
 
 .explore-button:hover {
     background-color: #005f87;
+}
+
+
+@media (max-width: 1024px) {
+    .testimonial {
+        flex: 0 0 50%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonial {
+        flex: 0 0 100%;
+    }
 }
