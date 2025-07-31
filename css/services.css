@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;800&display=swap");
 
-/* Page Hero Styles */
 .page-hero {
   background-image: url("../images/services_bg.jpg");
   background-size: cover;
@@ -47,7 +46,6 @@
   animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-/* Services Section */
 .services-section {
   padding: 120px 0;
   background-color: #f8fafc;
@@ -59,7 +57,11 @@
   position: relative;
 }
 
-/* Map Path Animation - Inverted Bigger Zigzag Curved Path */
+figcaption {
+  text-align: center;
+  background-color: #3882F6;
+}
+
 .map-path {
   position: absolute;
   left: 0;
@@ -108,8 +110,6 @@
     contrast(87%);
 }
 
-
-/* Position dots next to each service section */
 .path-dot:nth-child(1) {
   top: 78%;
   left: 12%;
@@ -134,7 +134,6 @@
   animation-delay: 2.1s;
 }
 
-/* Service Items */
 .service-item {
   display: flex;
   align-items: center;
@@ -190,7 +189,7 @@
   transform: scale(1.05);
 }
 
-/* Card Styles */
+
 .card {
   position: relative;
   display: flex;
@@ -272,7 +271,6 @@
   color: #bfdbfe;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -313,7 +311,6 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .service-item {
     gap: 40px;
@@ -328,7 +325,7 @@
     width: 300px;
   }
 }
-/*LARGE DESKTOP (1400px+)*/
+
 @media (min-width: 1400px) {
   .services-section {
     padding: 140px 0;
@@ -358,7 +355,6 @@
   }
 }
 
-/*LAPTOP/LARGE TABLET (1024px - 1199px) */
 @media (max-width: 1199px) and (min-width: 1024px) {
   .services-section {
     padding: 100px 0;
@@ -388,7 +384,6 @@
     height: 26px;
   }
 
-  /* Adjust connecting lines for laptop */
   .path-dot::after {
     width: 120px;
   }
@@ -417,14 +412,12 @@
     left: -190px;
   }
 
-  /* Responsive map path for laptop */
   .path-line {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><defs><linearGradient id="pathGradient" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:transparent;stop-opacity:0" /><stop offset="10%" style="stop-color:%233882f6;stop-opacity:0.6" /><stop offset="90%" style="stop-color:%233882f6;stop-opacity:0.6" /><stop offset="100%" style="stop-color:transparent;stop-opacity:0" /></linearGradient></defs><path d="M150 80 Q350 -30 500 120 Q650 270 850 160 Q1000 50 850 400 Q700 750 500 440 Q350 130 150 480 Q0 830 150 720" stroke="url(%23pathGradient)" stroke-width="3" fill="none" stroke-dasharray="12,6" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-18;0" dur="4s" repeatCount="indefinite"/></path></svg>')
       no-repeat center;
   }
 }
 
-/* TABLET (768px - 1023px)*/
 @media (max-width: 1023px) and (min-width: 768px) {
   .page-title {
     font-size: 42px;
@@ -434,7 +427,6 @@
     padding: 80px 0;
   }
 
-  /* Simplified map for tablet */
   .path-line {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="pathGradient" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:transparent;stop-opacity:0" /><stop offset="15%" style="stop-color:%233882f6;stop-opacity:0.5" /><stop offset="85%" style="stop-color:%233882f6;stop-opacity:0.5" /><stop offset="100%" style="stop-color:transparent;stop-opacity:0" /></linearGradient></defs><path d="M100 60 Q300 -20 400 100 Q500 220 700 140 Q800 60 700 300 Q600 540 400 360 Q300 180 100 420 Q0 660 100 580" stroke="url(%23pathGradient)" stroke-width="2.5" fill="none" stroke-dasharray="10,5" stroke-linecap="round"><animate attributeName="stroke-dashoffset" values="0;-15;0" dur="3.5s" repeatCount="indefinite"/></path></svg>')
       no-repeat center;
@@ -469,7 +461,6 @@
     height: 24px;
   }
 
-  /* Adjust dot positions for tablet */
   .path-dot:nth-child(1) {
     top: 10%;
     left: 20%;
@@ -490,7 +481,6 @@
     right: 20%;
   }
 
-  /* Shorter connecting lines for tablet */
   .path-dot::after {
     width: 80px;
   }
@@ -520,7 +510,6 @@
   }
 }
 
-/* MOBILE LANDSCAPE (481px - 767px)*/
 @media (max-width: 767px) and (min-width: 481px) {
   .page-hero {
     padding: 60px 0;
@@ -539,7 +528,6 @@
     padding: 60px 0;
   }
 
-  /* Mobile landscape map - vertical simplified path */
   .map-path {
     left: 50%;
     width: 100px;
@@ -581,7 +569,6 @@
     height: 22px;
   }
 
-  /* Vertical dot positions for mobile landscape */
   .path-dot:nth-child(1) {
     top: 12%;
   }
@@ -598,7 +585,6 @@
     top: 72%;
   }
 
-  /* Hide connecting lines on mobile landscape */
   .path-dot::after,
   .path-dot::before {
     display: none;
@@ -621,7 +607,6 @@
   }
 }
 
-/* MOBILE PORTRAIT (320px - 480px) */
 @media (max-width: 480px) {
   .page-hero {
     padding: 50px 0;
@@ -642,7 +627,6 @@
     padding: 50px 0;
   }
 
-  /* Mobile portrait - minimal map */
   .map-path {
     left: 50%;
     width: 80px;
@@ -697,7 +681,6 @@
   }
 }
 
-/* EXTRA SMALL MOBILE (below 320px) */
 @media (max-width: 319px) {
   .page-hero {
     padding: 40px 0;
@@ -716,7 +699,6 @@
     padding: 40px 0;
   }
 
-  /* Hide map on very small screens */
   .map-path {
     display: none;
   }
