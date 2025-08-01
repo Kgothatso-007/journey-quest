@@ -70,7 +70,7 @@ body {
     border-bottom: 1px solid #ddd;
     background: #395f91;
     width: 100%;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .filter button {
@@ -83,7 +83,7 @@ body {
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 120px; /* ADDED */
+    min-width: 120px;
 }
 
 .filter button:hover {
@@ -229,7 +229,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     font-family: 'Roboto-italics';
-    font-size: 14px; /* ADDED */
+    font-size: 14px;
 }
 
 .cta {
@@ -248,11 +248,67 @@ body {
     border: 2px solid #ccc;
 }
 
-
 @media (max-width: 1024px) {
     .video-content h1 {
-        font-size: 36px; 
+        font-size: 36px;
     }
+}
+
+@media (max-width: 900px) {
+  .hero-video-section {
+    height: 50vh;
+  }
+
+  .video-content h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .filter {
+    flex-wrap: wrap;
+  }
+
+  .filter button {
+    flex: 1 1 45%;
+    margin-bottom: 10px;
+  }
+
+  .destinations {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 10px;
+  }
+
+  .destination-card {
+    padding: 10px;
+  }
+
+  .image-container {
+    height: 140px;
+  }
+
+  .destination-info {
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 11px;
+  }
+
+  .map-section {
+    padding: 20px 10px;
+  }
+
+  .map-container {
+    max-width: 100%;
+  }
+
+  .map-pin {
+    width: 12px;
+    height: 12px;
+  }
+
+  .testimonials h2, 
+  .cta h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -279,27 +335,68 @@ body {
     }
 }
 
+@media (max-width: 600px) {
+    .testimonial {
+        flex: 0 0 100%;
+    }
+}
+
 @media (max-width: 480px) {
-    .video-content h1 {
-        font-size: 22px;
-    }
+  .hero-video-section {
+    height: 40vh;
+  }
 
-    .btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .video-content h1 {
+    font-size: 24px;
+  }
 
-    .cta {
-        padding: 30px 15px;
-    }
+  .filter button {
+    flex: 1 1 100%;
+    margin-bottom: 8px;
+  }
 
-    .cta h2 {
-        font-size: 20px;
-    }
+  .destinations {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
 
-    .map-section {
-        padding: 30px 10px;
-    }
+  .destination-card {
+    padding: 8px;
+  }
+
+  .image-container {
+    height: 120px;
+  }
+
+  .destination-info {
+    padding-left: 5%;
+    padding-top: 5%;
+    font-size: 10px;
+  }
+
+  .map-pin {
+    width: 10px;
+    height: 10px;
+  }
+
+  .testimonials h2,
+  .cta h2 {
+    font-size: 20px;
+  }
+
+  .quote-box {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 8px auto;
+  }
+
+  .cta {
+    padding: 20px 10px;
+  }
+  
+  .cta .btn {
+    padding: 8px 15px;
+  }
 }
 
 @media (min-width: 1024px) {
